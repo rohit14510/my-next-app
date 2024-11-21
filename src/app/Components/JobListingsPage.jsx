@@ -27,6 +27,8 @@ const jobs = [
     description:
       "We are seeking a UI/UX Designer to create exceptional user experiences and visually compelling designs.",
   },
+
+
   {
     title: "Backend Developer",
     location: "Work From Office",
@@ -58,22 +60,28 @@ const JobListingsPage = () => {
   ];
 
   // Filter jobs based on the active tab
-  const filteredJobs = activeTab === 0 ? jobs : jobs.filter((job) => job.type === tabs[activeTab]);
+  const filteredJobs =
+    activeTab === 0 ? jobs : jobs.filter((job) => job.type === tabs[activeTab]);
 
   return (
-
-    
     <div className="OpenPositionSection">
-      <h5 className="text-center text-3xl pt-[60px]">We have {jobs.length} open positions now!</h5>
+      <h5 className="text-center text-3xl pt-[60px]">
+        We have {jobs.length} open positions now!
+      </h5>
 
       <div className="flex flex-wrap min-h-screen">
         {/* Sidebar */}
-        <aside className="w-full sm:w-1/4 pt-[45px] px-6 text-black sm:block">
-  <ul>
+        <aside className="w-full sm:w-1/4 py-[45px] px-6 text-black sm:block sticky top-10 z-9 bg-[#F7F9FC] sm:h-screen h-auto overflow-y-auto">
+<div className="">
+<ul className="">
     {tabs.map((tab, index) => (
       <li
         key={index}
-        className={`mb-2 cursor-pointer py-2 px-4 ${activeTab === index ? "bg-white text-black text-xl font-bold border-l-8 border-[#5556D1]" : "bg-transparent text-[#253A67] hover:bg-blue-200"}`}
+        className={`mb-2 cursor-pointer py-2 px-4  ${
+          activeTab === index
+            ? "bg-white text-black text-xl font-bold border-l-8 border-[#5556D1]"
+            : "bg-transparent text-[#253A67] hover:bg-blue-200"
+        }`}
         onClick={() => setActiveTab(index)}
       >
         {tab}
@@ -81,15 +89,18 @@ const JobListingsPage = () => {
     ))}
   </ul>
 
-  <div className="mt-6">
+  <div className="mt-6 ">
     <p className="text-[#53648B] text-sm sm:text-base">
-      We are always seeking talented people. In case you cannot find your desired position here, please send us your LinkedIn profile and give us your contact information. We will be in touch.
+      We are always seeking talented people. In case you cannot find
+      your desired position here, please send us your LinkedIn profile
+      and give us your contact information. We will be in touch.
     </p>
 
     <button className="mt-4 py-2 px-4 rounded-3xl border-[1.82px] border-[#5556D1] text-[#5556D1] w-full sm:w-auto">
       Share your LinkedIn profile
     </button>
   </div>
+</div>
 </aside>
 
 

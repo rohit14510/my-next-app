@@ -53,16 +53,12 @@ body {
 
 }
 .input-container {
-  position: relative;
-  display: inline-block;
-  width: 300px;
-  border: 1px solid #2A2A2A;
+
   display: flex;
-  align-items: center;
-justify-content: center;
+  border: 1px solid #2A2A2A;
   padding: 8px;
   border-radius: 30px;
- 
+ width: 300px;
 }
 
 
@@ -252,6 +248,5 @@ opacity: 0px;
 border: 1px solid #FFFFFF
 
 }
-
 
 

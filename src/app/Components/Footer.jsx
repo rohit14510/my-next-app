@@ -8,19 +8,17 @@ import { FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
     <div className='footer lg:p-16 p-6'>
-<div className="text-white ">
+<div className="text-white hidden md:block">
   <div className="">
     <div className="relative">
-     
       <img
-        src="/assets/image 125.png" 
+        src="/assets/image 125.png"
         alt="Team working together"
         className="shadow-lg w-full h-auto footerImg"
       />
 
-    
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start text-start px-4 md:px-8 lg:px-16 FooterCard">
-        <div className=''>
+        <div>
           <h2 className="text-white lg:text-4xl text-2xl font-bold">
             Have a Project in Your Mind?
           </h2>
@@ -28,13 +26,14 @@ function Footer() {
             At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future.
           </p>
           <button className="mt-6 text-base font-medium text-white border border-white rounded-full px-6 py-2.5 text-center cursor-pointer relative flex gap-3 justify-center items-center">
-            Get Started <MdArrowOutward className='ml-1' width={100} />
+            Get Started <MdArrowOutward className="ml-1" width={100} />
           </button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <footer className="text-gray-300 pt-10 ">
   <div className="container mx-auto px-4">
@@ -52,25 +51,26 @@ function Footer() {
           With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
         </p>
         <div className="flex space-x-3 mt-4">
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="#" className="text-gray-300 hover:text-[#5556d1]">
           <FaTwitter />
           </a>
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="#" className="text-gray-300 hover:text-[#5556d1]">
           <FaSquareFacebook width={250} />
           </a>
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="#" className="text-gray-300 hover:text-[#5556d1]">
           <FaSquareInstagram />
           </a>
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="#" className="text-gray-300 hover:text-[#5556d1]">
           <FaLinkedin width={250} />
           </a>
         </div>
       </div>
 
       {/* Services Section */}
-      <div className="border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
-        <p className="text-sm font-normal mb-4 text-[#ffffff]/70">Services for Businesses</p>
-        <ul className="space-y-2 text-sm">
+      <div className="">
+       
+        <ul className="space-y-2 text-sm border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
+          <li> <p className="text-sm font-normal mb-4 text-[#ffffff]/70">Services for Businesses</p></li>
           <li>GST Registration</li>
           <li>Income Tax Returns filing</li>
           <li>GST Returns filing</li>
@@ -83,9 +83,10 @@ function Footer() {
       </div>
 
       {/* Income Tax Guides Section */}
-      <div className="border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
-        <p className="text-sm font-normal mb-4 text-[#ffffff]/70">Income Tax Guides</p>
-        <ul className="space-y-2 text-sm">
+      <div className="">
+       
+        <ul className="space-y-2 text-sm border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
+          <li> <p className="text-sm font-normal mb-4 text-[#ffffff]/70">Income Tax Guides</p></li>
           <li>Income Tax Return</li>
           <li>Deductions</li>
           <li>Form 16</li>
@@ -98,9 +99,10 @@ function Footer() {
       </div>
 
       {/* GST Guides Section */}
-      <div className="border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
-        <p className="text-sm font-normal mb-4 text-[#ffffff]/70">GST Guides</p>
-        <ul className="space-y-2 text-sm">
+      <div className="">
+       
+        <ul className="space-y-2 text-sm border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
+          <li> <p className="text-sm font-normal mb-4 text-[#ffffff]/70">GST Guides</p></li>
           <li>GST</li>
           <li>GST System</li>
           <li>GST Registration</li>
@@ -113,9 +115,10 @@ function Footer() {
       </div>
 
       {/* Mutual Fund Guides Section */}
-      <div className="border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
-        <p className="text-sm font-normal mb-4 text-[#ffffff]/70">Mutual Fund Guides</p>
-        <ul className="space-y-2 text-sm">
+      <div className="">
+       
+        <ul className="space-y-2 text-sm border-r-2 border-[rgba(255,255,255,0.2)] pr-8">
+          <li> <p className="text-sm font-normal mb-4 text-[#ffffff]/70">Mutual Fund Guides</p></li>
           <li>Mutual Fund Guides</li>
           <li>Mutual Fund Types</li>
           <li>Tax-Saving Mutual Fund</li>

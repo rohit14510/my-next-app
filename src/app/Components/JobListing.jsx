@@ -52,7 +52,7 @@ const JobListing = ({ title, location,time, type, description }) => {
        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
        {/* Modal Container */}
        <div
-         className="bg-white w-full max-w-5xl h-[85vh] rounded-lg shadow-lg relative flex"
+         className="bg-white w-full max-w-5xl h-[85vh] rounded-xl shadow-lg relative flex"
        >
          {/* Close Button */}
          <button
