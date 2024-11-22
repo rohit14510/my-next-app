@@ -189,14 +189,49 @@ const JobListing = ({ title, location,time, type, description }) => {
       </div>
 
       {/* File Upload */}
-      <div className="flex flex-col">
+       <div className="flex flex-col">
         <label htmlFor="resume" className="text-sm font-medium text-[#212121] mb-1">Upload Resume</label>
-        <input
+      {/*  <input
           type="file"
           id="resume"
           className="p-1 border border-gray-300 rounded  text-[#21212199]"
         />
-      </div>
+      </div> */}
+                      <div style={{ position: 'relative', width: '100%', }}>
+  <input
+    type="file"
+    className="form-control p-1 border border-gray-300 rounded  text-[#21212199]"
+    id="fileUpload"
+    style={{
+      width: '100%',
+      height: '100%',
+      // border: '2px dashed #BBA96C',
+      opacity: 0, // Hide the file input to make the label visible
+      position: 'absolute',
+      top: 0,
+      left: 0,
+    }}
+  />
+  <label
+    htmlFor="fileUpload"
+    className='p-1 border border-gray-300  rounded '
+    style={{
+      // width: '20px',
+      // height: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'start',
+      color: '#000',
+      // fontSize: '1rem',
+      textAlign: 'start',
+      cursor: 'pointer',
+      // border: '2px dashed #BBA96C',
+    }}
+  >
+     Upload Resume 
+  </label>
+</div>
+    </div>
     </div>
 
     {/* Message Field */}

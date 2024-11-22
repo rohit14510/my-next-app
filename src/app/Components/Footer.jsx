@@ -7,7 +7,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
-    <div className='footer lg:p-16 p-6'>
+    <div className='footer lg:p-16 lg:pb-5 p-6'>
 <div className="text-white hidden md:block">
   <div className="">
     <div className="relative">
